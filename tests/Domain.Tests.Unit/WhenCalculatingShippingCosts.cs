@@ -11,6 +11,8 @@ namespace Domain.Tests.Unit
                 new Item(500),
                 new Item(500)
             );
+
+            var sut = new ShippingCostsService();
         }
     }
 }
