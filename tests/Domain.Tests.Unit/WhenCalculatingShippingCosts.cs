@@ -1,3 +1,4 @@
+using FluentAssertions;
 using Xunit;
 
 namespace Domain.Tests.Unit
@@ -16,6 +17,11 @@ namespace Domain.Tests.Unit
 
             var parcelShippingCosts = sut.CalculateShippingCosts(
                 parcel
+            );
+
+            parcelShippingCosts.Should().Be(
+                2m,
+                "because the cost of shipping 1 kilo is 2 euro"
             );
         }
     }
