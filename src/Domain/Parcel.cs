@@ -1,12 +1,12 @@
-using System;
-
 namespace Domain
 {
     public class Parcel
     {
+        private readonly Item[] _items;
+
         public Parcel(params Item[] items)
         {
-            throw new NotImplementedException();
+            _items = items;
         }
     }
 }
