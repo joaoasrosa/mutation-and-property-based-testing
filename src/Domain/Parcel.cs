@@ -8,5 +8,20 @@ namespace Domain
         {
             _items = items;
         }
+
+        public TotalWeight TotalWeight
+        {
+            get
+            {
+                ulong totalWeight = 0;
+
+                foreach (var item in _items)
+                {
+                    totalWeight += item.Weight;
+                }
+
+                return (TotalWeight)totalWeight;
+            }
+        }
     }
 }
