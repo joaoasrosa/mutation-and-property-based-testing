@@ -28,6 +28,26 @@ namespace Domain.Tests.Unit
                     "because the cost of shipping 1 kilo is 2 euro"
                 );
             }
+
+            [Fact]
+            public void GivenParcelWithSumOfItemsIsZeroGrams_ThenShippingPriceIsZeroEuro()
+            {
+                var parcel = new Parcel(
+                    new Item(0),
+                    new Item(0)
+                );
+
+                var sut = new ShippingCostsService();
+
+                var parcelShippingCosts = sut.CalculateShippingCosts(
+                    parcel
+                );
+
+                ((decimal)parcelShippingCosts).Should().Be(
+                    0m,
+                    "because the cost of shipping 1 kilo is 2 euro"
+                );
+            }
         }
 
         public class ClassData
