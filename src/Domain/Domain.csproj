@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Authors>João Rosa</Authors>
+        <AssemblyVersion>0.0.1</AssemblyVersion>
+        <FileVersion>0.0.1</FileVersion>
+        <Version>0.0.1</Version>
+        <Copyright>Copyright (c) 2018 João Rosa. MIT License.</Copyright>
+    </PropertyGroup>
+    <PropertyGroup>
+        <DebugType Condition=" '$(Configuration)' == 'Release' ">None</DebugType>
+    </PropertyGroup>
+</Project>
