@@ -20,6 +20,10 @@
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1"/>
     </ItemGroup>
     <ItemGroup>
+        <DotNetCliToolReference Include="StrykerMutator.DotNetCoreCli" Version="0.8.0"/>
+        <PackageReference Include="StrykerMutator.DotNetCoreCli" Version="0.8.0"/>
+    </ItemGroup>
+    <ItemGroup>
         <ProjectReference Include="..\..\src\Domain\Domain.csproj"/>
     </ItemGroup>
 </Project>
