@@ -2,9 +2,9 @@ using System;
 
 namespace Domain
 {
-    public class Parcel
+    public struct Item
     {
-        public Parcel(params Item[] items)
+        public Item(uint weight)
         {
             throw new NotImplementedException();
         }
