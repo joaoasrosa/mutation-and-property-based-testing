@@ -1,9 +1,8 @@
-using System;
 using System.Globalization;
 
 namespace Domain
 {
-    public struct TotalWeight : IEquatable<TotalWeight>
+    public struct TotalWeight
     {
         private readonly ulong _totalWeight;
 
@@ -20,31 +19,6 @@ namespace Domain
         public static explicit operator TotalWeight(ulong totalWeight)
         {
             return new TotalWeight(totalWeight);
-        }
-
-        public static bool operator ==(TotalWeight left, TotalWeight right)
-        {
-            return left.Equals(right);
-        }
-
-        public static bool operator !=(TotalWeight left, TotalWeight right)
-        {
-            return !left.Equals(right);
-        }
-
-        public bool Equals(TotalWeight other)
-        {
-            return _totalWeight == other._totalWeight;
-        }
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            return obj is TotalWeight other && Equals(other);
         }
 
         public override int GetHashCode()
