@@ -19,7 +19,7 @@ namespace Domain.Tests.Unit
                 parcel
             );
 
-            parcelShippingCosts.Should().Be(
+            ((decimal)parcelShippingCosts).Should().Be(
                 2m,
                 "because the cost of shipping 1 kilo is 2 euro"
             );
