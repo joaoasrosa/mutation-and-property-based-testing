@@ -8,6 +8,7 @@ namespace Domain.Tests.Unit
         public void GivenParcelWithSumOfItemsIsOneKilo_ThenShippingPriceIsTwoEuro()
         {
             var parcel = new Parcel(
+                new Item(500),
                 new Item(500)
             );
         }

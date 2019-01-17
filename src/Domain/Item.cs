@@ -1,12 +1,12 @@
-using System;
-
 namespace Domain
 {
     public struct Item
     {
+        internal Weight Weight { get; }
+
         public Item(uint weight)
         {
-            throw new NotImplementedException();
+            Weight = (Weight)weight;
         }
     }
 }
