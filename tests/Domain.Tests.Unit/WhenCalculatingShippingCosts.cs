@@ -13,6 +13,10 @@ namespace Domain.Tests.Unit
             );
 
             var sut = new ShippingCostsService();
+
+            var parcelShippingCosts = sut.CalculateShippingCosts(
+                parcel
+            );
         }
     }
 }
